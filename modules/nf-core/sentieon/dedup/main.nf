@@ -79,6 +79,7 @@ process SENTIEON_DEDUP {
     touch ${prefix}.score
     touch ${prefix}.bam
     touch ${prefix}.bai
+    touch ${prefix}.metrics.multiqc.tsv
 
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":
